@@ -11,7 +11,7 @@ import time
 from collections import Counter
 
 st.title("Welcome, Digital Nomad!")
-image = Image.open('counties/charts/usanew.png')
+image = Image.open('akamdem/counties/main/usanew.png')
 st.image(image, caption='County clusters accross the US')
 st.header("Airton is excited to help you find your next functional destination in the US")
 st.subheader("Tell me a county that you're fond of, and I'll give you a list of similar counties that would be a great fit for you to work/travel, based on Euclidean Distances")
@@ -95,7 +95,7 @@ def similar_county(countyInput, stateInput):
 if countyInput and stateInput: 
 #    st.balloons()  
     st.table(similar_county(countyInput, stateInput))
-video_file = open('counties/charts/airport.mp4', 'rb')
+video_file = open('akamdem/counties/main/airport.mp4', 'rb')
 video_bytes = video_file.read()
 st.header("Safe Travels!")
 st.video(video_bytes)
