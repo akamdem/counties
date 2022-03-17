@@ -3,7 +3,6 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import pairwise_distances, cosine_similarity, cosine_distances
-from bokeh.io import output_file, show, save, export_png
 from sklearn.preprocessing import StandardScaler
 import streamlit as st
 import pickle
