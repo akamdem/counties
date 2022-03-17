@@ -16,8 +16,8 @@ st.image(image, caption='County clusters accross the US')
 st.header("Airton is excited to help you find your next functional destination in the US")
 st.subheader("Tell me a county that you're fond of, and I'll give you a list of similar counties that would be a great fit for you to work/travel, based on Euclidean Distances")
 
-recommended = pd.read_csv('../data/use_for_recommender1.csv')
-attributes = pd.read_csv('../data/county_kmeans_not_encoded.csv')
+recommended = pd.read_csv('use_for_recommender1.csv')
+attributes = pd.read_csv('county_kmeans_not_encoded.csv')
 recommended.drop(columns=['Unnamed: 0'], inplace=True)
 reco_names = recommended[['fips', 'state', 'name']]
 
