@@ -90,7 +90,7 @@ def similar_county(countyInput, stateInput):
         j = j+1
         if j > 4:
             break
-    return pd.DataFrame({'County': output_place, 'Similarity Score': outputscore, 'Pop': pop, 'Density': density, 'Median age': age, 'Percent international': english, 'Median Income': income, 'Percent with Bachelors': bachelor, 'Broadband connection rate': broadband})
+    return pd.DataFrame({'County': output_place, 'Similarity Score (out of 1)': outputscore, 'Pop': pop, 'Density': density, 'Median age': age, 'Percent international': english, 'Median Income': income, 'Percent with Bachelors': bachelor, 'Broadband connection rate': broadband})
 
 if countyInput and stateInput: 
 #    st.balloons()  
