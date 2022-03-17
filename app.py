@@ -98,5 +98,5 @@ if countyInput and stateInput:
 video_file = open('airport.mp4', 'rb')
 video_bytes = video_file.read()
 st.header("Happy remote living!")
-st.write("As you plan, you can also explore more county data through this tableau dashboard [link](https://public.tableau.com/app/profile/airton.tatoug.kamdem/viz/county_tb/Dashboard1?publish=yes)")
+st.write("As you plan, you can also explore more county data through this tableau [dashboard](https://public.tableau.com/app/profile/airton.tatoug.kamdem/viz/county_tb/Dashboard1?publish=yes)")
 st.video(video_bytes)
