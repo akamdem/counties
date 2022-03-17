@@ -3,6 +3,7 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import pairwise_distances, cosine_similarity, cosine_distances
+from bokeh.io import output_file, show, save, export_png
 from sklearn.preprocessing import StandardScaler
 import streamlit as st
 import pickle
@@ -11,7 +12,7 @@ import time
 from collections import Counter
 
 st.title("Welcome, Digital Nomad!")
-image = Image.open('counties/main/charts/usanew.png')
+image = Image.open('counties/charts/usanew.png')
 st.image(image, caption='County clusters accross the US')
 st.header("Airton is excited to help you find your next functional destination in the US")
 st.subheader("Tell me a county that you're fond of, and I'll give you a list of similar counties that would be a great fit for you to work/travel, based on Euclidean Distances")
@@ -95,7 +96,7 @@ def similar_county(countyInput, stateInput):
 if countyInput and stateInput: 
 #    st.balloons()  
     st.table(similar_county(countyInput, stateInput))
-video_file = open('counties/main/charts/airport.mp4', 'rb')
+video_file = open('counties/charts/airport.mp4', 'rb')
 video_bytes = video_file.read()
 st.header("Safe Travels!")
 st.video(video_bytes)
