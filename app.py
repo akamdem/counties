@@ -14,7 +14,7 @@ st.title("Welcome, Digital Nomad!")
 image = Image.open('usanew.png')
 st.image(image, caption='County clusters accross the US')
 st.header("Airton is excited to help you find your next functional destination in the US")
-st.subheader("Tell me a county that you love, and I'll give you a list of 5 similar counties that could be a great fit for you to travel/work in, using Euclidean Distances")
+st.subheader("Tell me a county that you love, and I'll give you a list of 5 similar counties that could be a great fit for you to travel/work in, based on Euclidean Distances")
 
 recommended = pd.read_csv('use_for_recommender1.csv')
 attributes = pd.read_csv('county_kmeans_not_encoded.csv')
