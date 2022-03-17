@@ -97,5 +97,6 @@ if countyInput and stateInput:
     st.table(similar_county(countyInput, stateInput))
 video_file = open('airport.mp4', 'rb')
 video_bytes = video_file.read()
-st.header("Explore additional data on counties here!"[link](https://public.tableau.com/app/profile/airton.tatoug.kamdem/viz/county_tb/Dashboard1?publish=yes)"))
+st.header("Happy travels!")
+st.write("Explore more county data here[link](https://public.tableau.com/app/profile/airton.tatoug.kamdem/viz/county_tb/Dashboard1?publish=yes)")
 st.video(video_bytes)
