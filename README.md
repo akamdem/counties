@@ -10,7 +10,7 @@ The initial goal of this project was to identify a technical approach that would
 
 Ultimately givent the results of clustering, it turns out that this approach was best used for understanding and visualizing potentially similar counties accross the US, but to generate dynamic recommendations, I found much better success with Euclidean distances, observing scores as high as .95 out 1 in the case of some counties, provign a pretty strong signal of effectiveness. So although I chose clustering to initiall group, visualize and understand my data set through plotly and tableau, Cosine Distances and similarity scores was ultimately the best approach for deploying an effective and dynamic model.
 
-### Contents: 
+### Contents: The Capstone Folder holds the resources noted below
 I: countyEDA
 - Contains import libraries, data frame adjustments and visualizations based on different clusters of counties accross the country
 
